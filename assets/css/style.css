@@ -13,12 +13,16 @@ body {
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #3053c5;
     color: #ffffff;
-    background-image: url(/assets/images/15459.jpg);
+    background-image: url(../images/blue-arrow.jpg);
+    padding: 100px;
     
 }
 
+.header h3 {
+    
+    
+}
 
 
 
@@ -39,6 +43,7 @@ img {
     color: rgb(128, 128, 128);
     background-color: blue;
     padding-left: 50px;
+    text-align: right;
     
 
 }
@@ -127,12 +132,11 @@ display: inline;
 /*styling header nav*/
 
 .header nav {
-    padding-top: 5px;
+    padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 .header nav ul {
