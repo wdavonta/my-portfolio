@@ -11,25 +11,57 @@ body {
 
 
 .header {
+    background-image: url(../images/15459.jpg);
+    padding: 150px;
+    
+    
+}
+
+header h1 {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(6, 37, 121);
-    background-image: url(../images/15459.jpg);
-    padding: 100px;
-    
+    color: rgb(227, 230, 240);
 }
 
 .header h3 {
 
-    text-align: right;
-    position: relative;
-  left: 300px;
+  text-align: left;
+  position: relative;
+  left: 550px;
   top: 80px;
+  color: rgb(128, 128, 128); 
+  display: inline;
+  background-color: rgb(6, 37, 121);
+  
+
   
     
     
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 12px;
+    text-align: right;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
+nav h4 {
+    
+    color: rgb(128, 128, 128);
+    background-color: rgb(42, 42, 70);
+    padding-left: 20px;
+    text-align: left;
+    
+   
+       
+        
+}
 
 
 img {
@@ -44,20 +76,11 @@ img {
     width: 3px;
 }
 
-.header h1 { display: inline;
-    color: rgb(128, 128, 128);
-    background-color: rgb(42, 42, 70);
-    padding-left: 100px;
-    
+
    
     
 
-}
 
-.header h3 {
-    text-align: right;
-   
-}
 
 /* hero section style*/
 
