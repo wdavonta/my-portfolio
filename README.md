@@ -13,7 +13,7 @@ Horiseon Social Solution Services Website
 This project is about making a professional portfolio about me with my work I done, about me, photo and contact info. 
 
 
-![alt text](/portfolio.png "Screenshot of webite")
+![alt text](portfolio.png "Screenshot of webite")
 
 # Contact Info
 Da'Vonta Williamson
