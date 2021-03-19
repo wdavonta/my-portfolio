@@ -4,13 +4,15 @@
   "description": "my portfolio",
   "main": "index.js",
   "dependencies": {
+    "create-react-app": "^4.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
