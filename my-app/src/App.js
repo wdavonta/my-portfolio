@@ -1,48 +1,44 @@
-import logo from './logo.svg';
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from './components/Gallery';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume'
 import ContactForm from './components/Contact';
+import '.App.css'
 
 function App() {
-  const [categories] = useState([
-    {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-  ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentPage, handlePageChange] = useState('About');
 
-  const [contactSelected, setContactSelected] = useState(false);
+  const renderPage = () => {
+    switch(currentPage) {
+      case 'About':
+        return <Home />
+      case 'Contact':
+        return <ContactForm/>;
+        case 'Resume':
+          return <Resume />;
+          case 'Portoflio':
+            return <Portfolio />
 
-  return (
+    }
+  };
+
+return (
+  <div>
+    <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
     <div>
-              <img src={logo} className="App-logo" alt="logo" />
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
+      {
+        // Render the component returned by 'renderPage()'
+        // YOUR CODE HERE
+        <div>{renderPage(currentPage)}</div>
+        //
+      }
     </div>
-  );
+  </div>
+);
 }
 
 export default App;
+
 
