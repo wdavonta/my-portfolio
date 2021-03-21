@@ -5,7 +5,7 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume'
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
-import '.App.css'
+import './App.css'
 
 function App() {
 
@@ -20,22 +20,26 @@ function App() {
         case 'Resume':
           return <Resume />;
           case 'Portoflio':
-            return <Portfolio />
+            return <Portfolio />;
+            default:
+              return <About/>
 
     }
   };
 
 return (
   <div>
-    <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-    <div>
+    <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+
+    <main>
       {
         // Render the component returned by 'renderPage()'
         // YOUR CODE HERE
         <div>{renderPage(currentPage)}</div>
         //
       }
-    </div>
+    </main>
+    <Footer />
   </div>
 );
 }
