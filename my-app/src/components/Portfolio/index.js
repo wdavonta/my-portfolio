@@ -1,13 +1,13 @@
 import React from 'react';
-import Project from '../Project';
+import Photolist from '../Project';
 
 function Portfolio() {
     return(
     <div>
-        <Project />
+        <Photolist />
     </div>
     )
 }
 
 
-export default Portfolio
+export default Portfolio;

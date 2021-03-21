@@ -13,19 +13,17 @@ function App() {
 
   const renderPage = () => {
     switch(currentPage) {
-      case 'About':
+      case 'Portfolio':
+        return <Portfolio />;
+        case 'Contact':
+        return <ContactForm />;
+      case 'Resume':
+        return <Resume />;
+      default:
         return <About />
-      case 'Contact':
-        return <ContactForm/>;
-        case 'Resume':
-          return <Resume />;
-          case 'Portoflio':
-            return <Portfolio />;
-            default:
-              return <About/>
 
     }
-  };
+  }
 
 return (
   <div>

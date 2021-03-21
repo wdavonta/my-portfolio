@@ -1,39 +1,38 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 
-const PhotoList = ({ category }) => {
+function PhotoList() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentPhoto, setCurrentPhoto] = useState();
 
-  const [photos] = useState([
+  const project = [
     {
       name: 'WorkDay Scheduler',
-      category: 'Projects',
+      category: 'Scheduler',
       description: 'Site to be able to find a personal trainer',
       url: "https://wdavonta.github.io/workday-scheduler/"
     },
     {
       name: 'Horiseon',
-      category: 'Projects',
+      category: 'Horiseon',
       description: 'Social Solution Services Website',
       url: "https://wdavonta.github.io/Horiseon/"
     },
     {
       name: 'Dungeons End',
-      category: 'Projects',
+      category: 'Dungeons',
       description: 'Random Encounter Battle Generator',
       url: "https://elysiayn.github.io/dungeons-end/"
     },
     {
       name: 'Photo Hut',
-      category: 'Projects',
+      category: 'Photohut',
       description: 'Community site for professional photographers',
       url: "https://ucf-photo-hut.herokuapp.com/"
       
     },
     {
       name: 'Budget-Tracker',
-      category: 'Projects',
+      category: 'Tracker',
       description: 'Tracker to track you budget whenever needed offline or online',
       url: "https://calm-refuge-54253.herokuapp.com/"
     },
@@ -42,32 +41,35 @@ const PhotoList = ({ category }) => {
       category: 'Projects',
       description: 'Weather in location you at',
       url: "https://wdavonta.github.io/weatherdashboard/"
-    },
-  ]);
+    }
+  ];
 
-  const currentPhotos = photos.filter((photo) => photo.category === category);
+  const [currentPhoto, setCurrentPhoto] = useState();
 
-  const toggleModal = (image, i) => {
-    setCurrentPhoto({ ...image, index: i });
+  const toggleModal = (image, category) => {
+    setCurrentPhoto({ ...image, index: category});
     setIsModalOpen(!isModalOpen);
-  };
+  }
 
   return (
     <div>
       {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
       <div className="flex-row">
-        {currentPhotos.map((image, i) => (
+        {project.map((image) => (
+          <div>
           <img
-            src={require(`../../assets/Projects/${category}/${i}.jpg`)}
+            src={image.photo}
             alt={image.name}
             className="img-thumbnail mx-1"
-            onClick={() => toggleModal(image, i)}
+            onClick={() => toggleModal(image)}
             key={image.name}
           />
+          <a href={image.url} target='_blank' rel='noreferrer' className='dest-links'>Browse the Project</a>
+          </div>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default PhotoList;
