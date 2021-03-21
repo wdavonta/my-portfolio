@@ -1,6 +1,5 @@
 import React from 'react';
-import resumeFile from '../../assets/Resume/'
-
+import resumeFile from '../../assets/Resume/Da’Vonta_Williamson_Coding_Resume.pdf'
 
 function Resume() {
     return(
@@ -19,4 +18,4 @@ function Resume() {
 }
 
 
-export default Resume
+export default Resume;

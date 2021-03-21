@@ -1,10 +1,10 @@
 import React from 'react';
-import PhotoList from '../PhotoList';
+import Project from '../Project';
 
 function Portfolio() {
     return(
     <div>
-        <PhotoList />
+        <Project />
     </div>
     )
 }
