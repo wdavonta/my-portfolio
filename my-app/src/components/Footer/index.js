@@ -1,14 +1,16 @@
 import React from "react";
 import "./Footer.css";
+import github from '../../assets/Icons/GitHub-Mark.png';
+import linked from '../../assets/Icons/linkedInlogo.png';
 
 function Footer() {
   return (
-  <footer>
+  <footer className="footermain">
       <p>
-          <a href="https://github.com/wdavonta"><img src={require('../../assets/Icons/GitHub-Mark.png')} alt="GitHub"/></a>
+          <a href="https://github.com/wdavonta"><img src={github} className="logo" alt="Github"/></a>
       </p>
       <p>
-          <a href="https://www.linkedin.com/in/da-vonta-williamson-43238652/"><img src={"../../assets/Icons/linkedInlogo"} className="logo" alt="LinkedIn"/></a>
+          <a href="https://www.linkedin.com/in/da-vonta-williamson-43238652/"><img src={linked} className="logo2" alt="LinkedIn"/></a>
       </p>
       
   </footer>

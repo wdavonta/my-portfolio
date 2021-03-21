@@ -37,6 +37,7 @@ body {
   background: var(--dark);
   color: var(--light);
   font-family: 'Poiret One', cursive;
+  background: url('../src/assets/cover/code.png')
 
 }
 
@@ -211,6 +212,7 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
+  
 }
 
 .px-1 {
@@ -295,4 +297,27 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.resume {
+  text-align: center;
+  margin: 300px;
+}
+
+.my-img {
+  margin-left: 300px;
+  border-radius: 30px;
+  
+}
+
+p {
+  text-align: center;
+}
+
+.logo2 {
+  width: 8%;
+}
+
+.footermain{
+  box-sizing: border-box;
 }

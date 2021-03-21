@@ -10,7 +10,7 @@ function Resume() {
     <div>
         <p>Bootstrap, Node.js, Mongoose, Materlize</p>
     </div>
-    <div>
+    <div className = "resume">
         <a href={resumeFile} download ={resumeFile}>Da'Vonta Resume</a>
     </div>
     </section>

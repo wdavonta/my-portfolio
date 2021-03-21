@@ -4,8 +4,8 @@ import coverImage from '../../assets/cover/davonta.jpg';
 function About() {
   return (
     <section className="my-5">
-      <h1 id="about">Who am I?</h1>
-      <img src={coverImage} className="my-2" style={{ width: "20%" }} alt="cover" />
+      <h1 id="about">Da'Vonta Williamson</h1>
+      <img src={coverImage} className="my-img" style={{ width: "40%" }} alt="cover" />
       <div className="my-2">
         <p> "I'm Da'Vonta Williamson born and raised in the beautiful city of Orlando,FL.
             Learning the skills to become a a great coder. Hopefully landing a job to becoming a Web developer,
