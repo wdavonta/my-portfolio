@@ -5,7 +5,7 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #10c045;
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
@@ -36,7 +36,7 @@ body {
   letter-spacing: .1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: "Gill Sans", sans-serif;
   background: url('../src/assets/cover/code.png')
 
 }
@@ -78,7 +78,7 @@ h6 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 30px;
   margin-top: 0;
 }
 
@@ -197,6 +197,7 @@ textarea {
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
+  
 }
 
 .my-1 {
@@ -301,7 +302,15 @@ a {
 
 .resume {
   text-align: center;
-  margin: 300px;
+  margin: 150px;
+  background-color: #090cb4;
+  border: none;
+  color: rgb(26, 5, 82);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .my-img {
@@ -318,6 +327,32 @@ p {
   width: 8%;
 }
 
-.footermain{
-  box-sizing: border-box;
+.language {
+  margin-left: 700px;
+  font-size: 30px;
+  color: rgb(4, 163, 12);
+  
+  
+
+}
+
+ .skills {
+  float: left;
+  width: 320px;
+  color: rgb(4, 163, 12);
+  font-size: 30px;
+}
+
+.resumeInfo {
+  margin-left: 300px;
+  margin-top: 50px;
+  color: rgb(4, 163, 12);
+  font-size: 50px;
+
+}
+
+
+.flex-row {
+  width: 50%;
+  float: left;
 }

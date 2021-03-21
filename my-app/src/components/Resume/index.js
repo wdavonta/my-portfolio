@@ -5,10 +5,21 @@ function Resume() {
     return(
         <section>
     <div>
-        <p>HTML,CSS, Javascript, React</p>
+        <h2 className='resumeInfo'> Skills and Languages</h2>
+        <ul className='skills'>
+  <ol>HTML</ol>
+  <ol>CSS</ol>
+  <ol>Javascript</ol>
+  <ol>React</ol>
+</ul>
     </div>
     <div>
-        <p>Bootstrap, Node.js, Mongoose, Materlize</p>
+        <ul className='language'>
+  <ol>Bootstrap</ol>
+  <ol>Node JS</ol>
+  <ol>Mongoose</ol>
+  <ol>Materialize</ol>
+</ul>
     </div>
     <div className = "resume">
         <a href={resumeFile} download ={resumeFile}>Da'Vonta Resume</a>
