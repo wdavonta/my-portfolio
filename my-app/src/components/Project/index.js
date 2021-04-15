@@ -46,7 +46,7 @@ function PhotoList() {
     name: 'Maniacs of HNN',
     category: 'Projects',
     description: 'FanPage for HHN',
-    url: ""
+    url: "https://maniacs-of-hhn.herokuapp.com/"
   }
   ];
 
