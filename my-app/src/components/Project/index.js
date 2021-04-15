@@ -41,7 +41,13 @@ function PhotoList() {
       category: 'Projects',
       description: 'Weather in location you at',
       url: "https://wdavonta.github.io/weatherdashboard/"
-    }
+    },
+    {
+    name: 'Maniacs of HNN',
+    category: 'Projects',
+    description: 'FanPage for HHN',
+    url: ""
+  }
   ];
 
   const [currentPhoto, setCurrentPhoto] = useState();
