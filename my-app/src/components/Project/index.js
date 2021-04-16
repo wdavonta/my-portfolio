@@ -38,13 +38,13 @@ function PhotoList() {
     },
     {
       name: 'Weather Dashboard',
-      category: 'Projects',
+      category: 'Weather',
       description: 'Weather in location you at',
       url: "https://wdavonta.github.io/weatherdashboard/"
     },
     {
     name: 'Maniacs of HNN',
-    category: 'Projects',
+    category: 'hhnmanic',
     description: 'FanPage for HHN',
     url: "https://maniacs-of-hhn.herokuapp.com/"
   }
