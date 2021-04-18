@@ -43,7 +43,7 @@ function PhotoList() {
       url: "https://wdavonta.github.io/weatherdashboard/"
     },
     {
-    name: 'Maniacs of HNN',
+    name: 'Maniac of HNN',
     category: 'hhnmanic',
     description: 'FanPage for HHN',
     url: "https://maniacs-of-hhn.herokuapp.com/"
